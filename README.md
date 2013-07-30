@@ -1,4 +1,4 @@
 pairgramming
 ============
 
-Pair programming session provide service
+Pair programming session providing service
