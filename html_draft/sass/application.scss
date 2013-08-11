@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+@import "mixins";
+@import "css3";
+@import "reset";
+@import "scaffolding.scss";
+@import "font-awesome.scss";
+
+// SIDES
+// -------------------------
+
+.add-new, .join-talk {
+	display: block;
+	width: 100%;
+	height: 47px;
+	line-height: 47px;
+	text-align: left;
+	background: #f7f7f7;
+	border: none;
+	border-bottom: 1px solid #ccc;
+
+	i {
+		padding-right: 10px;
+		color: #7c7c7c;
+
+	}
+}
+
+.add-new {
+	padding-left: 30px;
+}
+
+.join-talk {
+	padding-left: 25px;
+}
+
+.files {
+	padding-top: 16px;
+
+	li {
+		position: relative;
+		padding: 3px 18px;
+		padding-left: 32px;
+		border: 1px solid #f7f7f7;
+		border-width: 1px 0;
+
+		&.folder {
+			padding-left: 18px;
+		}
+
+		&:hover {
+			background: #fff;
+			border-color: #ebebeb;
+
+			.btn-delete {
+				display: block;
+			}
+		}
+	}
+
+	.btn-delete {
+		display: none;
+		position: absolute;
+		top: 1px;
+		right: 18px;
+		background: none;
+		border: none;
+	}
+
+	i {
+		padding-right: 2px;
+		color: #7c7c7c;
+	}
+}
+
+.chat-list {
+	padding-bottom: 8px;
+	list-style: none;
+	border-bottom: 1px solid #f7f7f7;
+
+	li {
+		position: relative;
+		padding: 0 8px;
+		margin-bottom: 8px;
+
+		&:hover {
+			.btn-delete {
+				display: block;
+			}
+		}
+	}
+
+	img	{
+		margin-right: 8px;
+	}
+
+	.color {
+		display: inline-block;
+		vertical-align: middle;
+		width: 8px;
+		height: 8px;
+		margin-right: 8px;
+		@include border-radius(4px);
+	}
+
+	.color-1 {
+		background-color: #629ced;
+	}
+
+	.color-2 {
+		background-color: #efa59a;
+	}
+
+	.color-3 {
+		background-color: #90dc84;
+	}
+
+	.color-4 {
+		background-color: #c7a2e5;
+	}
+
+	.btn-delete {
+		display: none;
+		position: absolute;
+		top: 1px;
+		right: 18px;
+		background: none;
+		border: none;
+	}
+
+	i {
+		padding-right: 2px;
+		color: #7c7c7c;
+	}
+}
