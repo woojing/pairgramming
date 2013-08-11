@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>layout</title>
+<link rel="stylesheet" href="css/application.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="lib/codemirror.js"></script>
+<link rel="stylesheet" href="lib/codemirror.css">
+<link rel="stylesheet" href="theme/solarized.css">
+</head>
+<body>
+ 	<div class="row wrapper">
+ 		<header class="header row">
+ 			<div class="col-l">
+ 				<button class="btn">
+ 					<i class="icon-folder-open"></i>
+ 					import
+ 				</button>
+ 				<button class="btn">
+ 					<i class="icon-facetime-video"></i>
+ 					record
+ 				</button>
+ 			</div>
+ 			<div class="col-m">
+ 				<h1>my_dict.py</h1>
+ 			</div>
+ 			<div class="col-r">
+ 				<button class="btn">
+ 					<i class="icon-share"></i>
+ 					share
+ 				</button>
+ 				<button class="btn">
+ 					<i class="icon-fullscreen"></i>
+ 					fullscreen
+ 				</button>
+ 			</div>
+ 		</header>
+ 	</div>
+
+ 
+	<div class="row content-wrapper">
+		<div class="col-l">
+			<button class="btn add-new">
+				<i class="icon-plus"></i>
+				ADD NEW
+			</button>
+			<ul class="files">
+				<li>
+					index.html
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+				<li>
+					drive.css
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+				<li>
+					home.js
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+				<li class="folder">
+					<i class="icon-caret-down"></i> assets
+				</li>
+				<li class="folder"><i class="icon-caret-down"></i> scripts
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-m">
+			<form>
+			<textarea id="coding_area" name="coding_area">
+function findSequence(goal) {
+    function find(start, history) {
+        if (start == goal)
+            return history;
+        else if (start > goal)
+            return null;
+        else
+            return find(start + 5, "(" + history + " + 5)") ||
+            find(start * 3, "(" + history + " * 3)");
+        }
+    return find(1, "1");
+}</textarea>
+			</form>
+
+		</div>
+
+		<div class="col-r">
+			<button class="btn join-talk">
+				<i class="icon-plus"></i>
+				JOIN TALK
+			</button>
+			<ul class="chat-list">
+				<li>
+					<img src="images/dummy-avatar1.png" alt="">
+					<span class="color color-1"></span>You
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+				<li>
+					<img src="images/dummy-avatar2.png" alt="">
+					<span class="color color-2"></span>John Smith
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+				<li>
+					<img src="images/dummy-avatar3.png" alt="">
+					<span class="color color-3"></span>Michael
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+				<li>
+					<img src="images/dummy-avatar4.png" alt="">
+					<span class="color color-4"></span>Sue Lee
+					<button class="btn-delete"><i class="icon-remove"></i></button>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/pair_session.js"></script>
+</body>
+</html>
