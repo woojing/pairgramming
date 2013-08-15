@@ -1,26 +1,130 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko"> 
 <head>
-    <meta charset="UTF-8">
-    <title>Pair Session</title>
-    <link rel="stylesheet" href="session.css">
-    <script src="{{ STATIC_URL }}code_mirror/lib/codemirror.js"></script>
-    <link rel="stylesheet" href="{{ STATIC_URL }}code_mirror/lib/codemirror.css">
-    <script src="{{ STATIC_URL }}code_mirror/mode/javascript/javascript.js"></script>
+<meta charset="utf-8">
+<title>layout</title>
+<link rel="stylesheet" href="{{ STATIC_URL }}css/application.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}code_mirror/lib/codemirror.js"></script>
+<link rel="stylesheet" href="{{ STATIC_URL }}code_mirror/lib/codemirror.css">
+<link rel="stylesheet" href="{{ STATIC_URL }}code_mirror/theme/solarized.css">
 </head>
 <body>
-    <div class="code_editor">
-        <textarea name="coding_area" id="coding_area" cols="30" rows="10"></textarea>
+    <div class="row wrapper">
+        <header class="header row">
+            <div class="col-l">
+                <button class="btn">
+                    <i class="icon-folder-open"></i>
+                    import
+                </button>
+                <button class="btn">
+                    <i class="icon-facetime-video"></i>
+                    record
+                </button>
+            </div>
+            <div class="col-m">
+                <h1>my_dict.py</h1>
+            </div>
+            <div class="col-r">
+                <button class="btn">
+                    <i class="icon-share"></i>
+                    share
+                </button>
+                <button class="btn">
+                    <i class="icon-fullscreen"></i>
+                    fullscreen
+                </button>
+            </div>
+        </header>
     </div>
-    <div class="partners">
-        <ul>
-            <li>me</li>
-            <li>partner_1</li>
-            <li>observer_1</li>
-        </ul>
+
+ 
+    <div class="row content-wrapper">
+        <div class="col-l">
+            <button class="btn add-new">
+                <i class="icon-plus"></i>
+                ADD NEW
+            </button>
+            <ul class="files">
+                <li>
+                    index.html
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+                <li>
+                    drive.css
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+                <li>
+                    home.js
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+                <li class="folder">
+                    <i class="icon-caret-down"></i> assets
+                </li>
+                <li class="folder"><i class="icon-caret-down"></i> scripts
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-m">
+            <form>
+            <textarea id="coding_area" name="coding_area">
+function findSequence(goal) {
+    function find(start, history) {
+        if (start == goal)
+            return history;
+        else if (start > goal)
+            return null;
+        else
+            return find(start + 5, "(" + history + " + 5)") ||
+            find(start * 3, "(" + history + " * 3)");
+        }
+    return find(1, "1");
+}</textarea>
+            </form>
+
+        </div>
+
+        <div class="col-r">
+            <button class="btn join-talk">
+                <i class="icon-plus"></i>
+                JOIN TALK
+            </button>
+            <ul class="chat-list">
+                <li>
+                    <img src="{{ STATIC_URL }}images/dummy-avatar1.png" alt="">
+                    <span class="color color-1"></span>You
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+                <li>
+                    <img src="{{ STATIC_URL }}images/dummy-avatar2.png" alt="">
+                    <span class="color color-2"></span>John Smith
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+                <li>
+                    <img src="{{ STATIC_URL }}images/dummy-avatar3.png" alt="">
+                    <span class="color color-3"></span>Michael
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+                <li>
+                    <img src="{{ STATIC_URL }}images/dummy-avatar4.png" alt="">
+                    <span class="color color-4"></span>Sue Lee
+                    <button class="btn-delete"><i class="icon-remove"></i></button>
+                </li>
+            </ul>
+        </div>
     </div>
+
     <script>
-        var myCodeMirror = CodeMirror.fromTextArea(document.getElementById('coding_area'));
+        var editor = CodeMirror.fromTextArea(document.getElementById("coding_area"), {
+            lineNumbers: true,
+            mode: "javascript",
+            indentUnit: 4,
+            indentWithTabs: true,
+            enterMode: "keep",
+            tabMode: "shift",
+            theme: 'solarized dark'
+        });
     </script>
 </body>
 </html>
