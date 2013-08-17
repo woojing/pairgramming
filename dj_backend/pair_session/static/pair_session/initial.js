@@ -22,17 +22,15 @@ $(function() {
   function connect() {
     disconnect();
 
-    var transports = $('#protocols input:checked').map(function() {
-      return $(this).attr('id');
-    }).get();
+    var transports = ["websocket", "xhr-streaming", "iframe-eventsource", "iframe-htmlfile", "xhr-polling", "iframe-xhr-polling", "jsonp-polling"];
 
-    conn = new SockJS('http://' + window.location.host + '/chat', transports);
+    conn = new SockJS('http://localhost:8888/chat', transports);
 
     log('Connecting...');
 
     conn.onopen = function() {
       log('Connected.');
-      conn.send('room:' + jQuery('#roomnumber').val())
+      // conn.send('room:' + jQuery('#roomnumber').val())
       update_ui();
     };
 
