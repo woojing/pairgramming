@@ -116,16 +116,6 @@ function findSequence(goal) {
         </div>
     </div>
 
-    <script>
-        var editor = CodeMirror.fromTextArea(document.getElementById("coding_area"), {
-            lineNumbers: true,
-            mode: "javascript",
-            indentUnit: 4,
-            indentWithTabs: true,
-            enterMode: "keep",
-            tabMode: "shift",
-            theme: 'solarized dark'
-        });
-    </script>
+    <script src="{{ STATIC_URL }}pair_session/initial.js"></script>
 </body>
 </html>
