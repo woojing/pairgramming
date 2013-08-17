@@ -17,24 +17,30 @@ class IndexHandler(tornado.web.RequestHandler):
 class ChatConnection(sockjs.tornado.SockJSConnection):
     """Chat connection implementation"""
     # Class level variable
-    participants = set()
+    # participants = set()
+    session_blocks = dict()
 
     def on_open(self, info):
         # Send that someone joined
-        self.broadcast(self.participants, "Someone joined.")
-
+        # self.broadcast(self.participants, "Someone joined.")
         # Add client to the clients list
-        self.participants.add(self)
+        # self.participants.add(self)
+        pass
 
     def on_message(self, message):
+        if message.startswith('session:'):
+            session_name = message.split(':').pop()
+            if self.session_blocks.get(session_name, False) == False:
+                self.session_blocks[session_name] = set()
+                self.session_blocks[session_name].add(self)
         # Broadcast message
-        self.broadcast(self.participants, message)
+        # self.broadcast(self.participants, message)
 
     def on_close(self):
         # Remove client from the clients list and broadcast leave message
-        self.participants.remove(self)
-
-        self.broadcast(self.participants, "Someone left.")
+        # self.participants.remove(self)
+        # self.broadcast(self.participants, "Someone left.")
+        pass
 
 if __name__ == "__main__":
     import logging

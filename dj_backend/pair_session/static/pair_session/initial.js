@@ -1,4 +1,9 @@
 ;(function(){
+  
+})();
+
+$(function() {
+
   var editor = CodeMirror.fromTextArea(document.getElementById("coding_area"), {
     lineNumbers: true,
     mode: "javascript",
@@ -8,15 +13,13 @@
     tabMode: "shift",
     theme: 'solarized dark'
   });
-})();
 
-$(function() {
+  window.code_editor = editor;
+
   var conn = null;
 
   function log(msg) {
-    var control = $('#log');
-    control.html(control.html() + msg + '<br/>');
-    control.scrollTop(control.scrollTop() + 1000);
+    console.log(msg);
   }
 
   function connect() {
@@ -30,12 +33,20 @@ $(function() {
 
     conn.onopen = function() {
       log('Connected.');
-      // conn.send('room:' + jQuery('#roomnumber').val())
+      conn.send('session:temp_session');
       update_ui();
     };
 
     conn.onmessage = function(e) {
-      log('Received: ' + e.data);
+      recv_obj = JSON.parse(e.data);
+      log('Received: ' + recv_obj);
+      switch(recv_obj.type){
+        case "code_update":
+          window.code_editor.setValue(recv_obj.data);
+          break;
+        default:
+          break;
+      }
     };
 
     conn.onclose = function() {
@@ -46,7 +57,7 @@ $(function() {
   }
 
   function disconnect() {
-    if (conn != null) {
+    if (conn !== null) {
       log('Disconnecting...');
 
       conn.close();
@@ -59,7 +70,7 @@ $(function() {
   function update_ui() {
     var msg = '';
 
-    if (conn == null || conn.readyState != SockJS.OPEN) {
+    if (conn === null || conn.readyState != SockJS.OPEN) {
       $('#status').text('disconnected');
       $('#connect').text('Connect');
     } else {
@@ -68,23 +79,13 @@ $(function() {
     }
   }
 
-  $('#connect').click(function() {
-    if (conn == null) {
+  $('button.join-talk').click(function() {
+    if (conn === null) {
       connect();
     } else {
       disconnect();
     }
-
     update_ui();
-    return false;
-  });
-
-  $('form').submit(function() {
-    var text = $('#text').val();
-    log('Sending: ' + text);
-    text = 'my_room:' + jQuery('#roomnumber').val() + ',' + text;
-    conn.send(text);
-    $('#text').val('').focus();
     return false;
   });
 });
