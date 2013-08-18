@@ -7,8 +7,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
 <script src="{{ STATIC_URL }}code_mirror/lib/codemirror.js"></script>
+<script src="{{ STATIC_URL }}lib/mustache.js"></script>
 <link rel="stylesheet" href="{{ STATIC_URL }}code_mirror/lib/codemirror.css">
 <link rel="stylesheet" href="{{ STATIC_URL }}code_mirror/theme/solarized.css">
+<script type="text/javascript">
+    var g_static_root = "{{ STATIC_URL }}";
+</script>
 </head>
 <body>
     <div class="row wrapper">
@@ -89,14 +93,9 @@ function findSequence(goal) {
         <div class="col-r">
             <button class="btn join-talk">
                 <i class="icon-plus"></i>
-                <span id="join-button-text">JOIN TALK</span>
+                <span class="join-button-text">JOIN TALK</span>
             </button>
             <ul class="chat-list">
-                <li>
-                    <img src="{{ STATIC_URL }}images/dummy-avatar1.png" alt="">
-                    <span class="color color-1"></span>You
-                    <button class="btn-delete"><i class="icon-remove"></i></button>
-                </li>
             </ul>
         </div>
     </div>

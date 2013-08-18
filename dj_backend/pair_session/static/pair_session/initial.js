@@ -1,8 +1,4 @@
-;(function(){
-  
-})();
-
-$(function() {
+;$(function() {
 
   var editor = CodeMirror.fromTextArea(document.getElementById("coding_area"), {
     lineNumbers: true,
@@ -17,23 +13,50 @@ $(function() {
   window.code_editor = editor;
 
   var conn = null;
+  var send_obj = {'type': undefined,
+                   'data': null};
+
+  var last_update_time = new Date();
+
+  var template_user_list = "<li>\
+                    <img src=\"{{ static_root }}images/dummy-avatar1.png\" alt=\"\">\
+                    <span class=\"color color-1\"></span>{{ user_name }}\
+                    <button class=\"btn-delete\"><i class=\"icon-remove\"></i></button>\
+                </li>"
 
   function log(msg) {
     console.log(msg);
   }
+
+  editor.on('change', function(cm, eventObj){
+    if(conn === null) {
+      return;
+    }
+    var current_time = new Date();
+    if(current_time - last_update_time < 500)
+      return;
+    else
+      last_update_time = current_time;
+    send_obj.type = 'code_update';
+    send_obj.data = cm.getValue();
+    send_obj.session = 'temp_session';
+    conn.send(JSON.stringify(send_obj));
+  });
 
   function connect() {
     disconnect();
 
     var transports = ["websocket", "xhr-streaming", "iframe-eventsource", "iframe-htmlfile", "xhr-polling", "iframe-xhr-polling", "jsonp-polling"];
 
-    conn = new SockJS('http://localhost:8888/chat', transports);
+    conn = new SockJS('http://'+window.location.hostname+':8888/chat', transports);
 
     log('Connecting...');
 
     conn.onopen = function() {
       log('Connected.');
-      conn.send('session:temp_session');
+      send_obj.type = 'session_join';
+      send_obj.data = 'temp_session';
+      conn.send(JSON.stringify(send_obj));
       update_ui();
     };
 
@@ -42,8 +65,18 @@ $(function() {
       log('Received: ' + recv_obj);
       switch(recv_obj.type){
         case "code_update":
+          current_position = window.code_editor.getCursor();
           window.code_editor.setValue(recv_obj.data);
+          window.code_editor.setCursor(current_position);
           break;
+        case "session_list_update":
+          users = JSON.parse(recv_obj.data);
+          var user_list_html = '';
+          users.map(function(user){
+            user.static_root = g_static_root;
+            user_list_html += Mustache.render(template_user_list, user);
+          });
+          $('ul.chat-list').html(user_list_html);
         default:
           break;
       }
@@ -62,6 +95,8 @@ $(function() {
 
       conn.close();
       conn = null;
+
+      $('ul.chat-list').html('');
 
       update_ui();
     }
@@ -82,8 +117,10 @@ $(function() {
   $('button.join-talk').click(function() {
     if (conn === null) {
       connect();
+      $('button.join-talk span.join-button-text').text('Disconnect')
     } else {
       disconnect();
+      $('button.join-talk span.join-button-text').text('JOIN TALK');
     }
     update_ui();
     return false;
