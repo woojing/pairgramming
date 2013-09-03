@@ -1,0 +1,390 @@
+2013-08-11 21:32:12    create css/styles.css 
+2013-08-11 21:34:29     error sass/application.scss (Line 13: File to import not found or unreadable: common.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 21:34:29    create css/application.css 
+2013-08-11 21:34:29     error sass/application.scss (Line 13: File to import not found or unreadable: common.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 21:34:29 overwrite css/application.css 
+2013-08-11 21:35:00     error sass/application.scss (Line 13: File to import not found or unreadable: common.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 21:35:00 overwrite css/application.css 
+2013-08-11 21:35:00     error sass/application.scss (Line 13: File to import not found or unreadable: common.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 21:35:00 overwrite css/application.css 
+2013-08-11 21:35:22     error sass/application.scss (Line 57 of sass/_reset.scss: Undefined mixin 'tab-focus'.)
+2013-08-11 21:35:22 overwrite css/application.css 
+2013-08-11 21:35:55     error sass/application.scss (Line 57 of sass/_reset.scss: Undefined mixin 'tab-focus'.)
+2013-08-11 21:35:55 identical css/application.css 
+2013-08-11 21:36:16     error sass/application.scss (Line 57 of sass/_reset.scss: Undefined mixin 'tab-focus'.)
+2013-08-11 21:36:16 identical css/application.css 
+2013-08-11 21:37:04     error sass/application.scss (Line 57 of sass/_reset.scss: Undefined mixin 'tab-focus'.)
+2013-08-11 21:37:04 identical css/application.css 
+2013-08-11 21:37:14     error sass/application.scss (Line 57 of sass/_reset.scss: Undefined mixin 'tab-focus'.)
+2013-08-11 21:37:14 identical css/application.css 
+2013-08-11 21:37:46     error sass/application.scss (Line 27 of sass/_scaffolding.scss: Undefined variable: "$bold".)
+2013-08-11 21:37:46 overwrite css/application.css 
+2013-08-11 21:37:51     error sass/application.scss (Line 27 of sass/_scaffolding.scss: Undefined variable: "$bold".)
+2013-08-11 21:37:51 identical css/application.css 
+2013-08-11 21:38:19     error sass/application.scss (Line 27 of sass/_scaffolding.scss: Undefined variable: "$bold".)
+2013-08-11 21:38:19 identical css/application.css 
+2013-08-11 21:38:48 overwrite css/application.css 
+2013-08-11 21:38:50 overwrite css/application.css 
+2013-08-11 21:38:53 identical css/application.css 
+2013-08-11 22:06:19 overwrite css/application.css 
+2013-08-11 22:06:21    create css/styles.css 
+2013-08-11 22:06:35 overwrite css/application.css 
+2013-08-11 22:07:00 overwrite css/application.css 
+2013-08-11 22:07:59 overwrite css/application.css 
+2013-08-11 22:08:54 overwrite css/application.css 
+2013-08-11 22:09:21 overwrite css/application.css 
+2013-08-11 22:10:04 overwrite css/application.css 
+2013-08-11 22:12:44 overwrite css/application.css 
+2013-08-11 22:12:51 overwrite css/application.css 
+2013-08-11 22:13:05 overwrite css/application.css 
+2013-08-11 22:14:08 overwrite css/application.css 
+2013-08-11 22:14:24 overwrite css/application.css 
+2013-08-11 22:15:06 overwrite css/application.css 
+2013-08-11 22:15:13 overwrite css/application.css 
+2013-08-11 22:15:24 overwrite css/application.css 
+2013-08-11 22:26:18     error sass/font-awesome.scss (Line 27: File to import not found or unreadable: variables.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 22:26:18    create css/font-awesome.css 
+2013-08-11 22:28:02     error sass/font-awesome.scss (Line 775: File to import not found or unreadable: variables.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 22:28:02 overwrite css/font-awesome.css 
+2013-08-11 22:28:08     error sass/font-awesome.scss (Line 776: File to import not found or unreadable: core.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 22:28:08 overwrite css/font-awesome.css 
+2013-08-11 22:28:28     error sass/font-awesome.scss (Line 824: File to import not found or unreadable: core.
+Load paths:
+  /Users/rr40ww/work/pairgramming/html_draft/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/blueprint/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-960-plugin-f4bfe8555a7d2cae09bc/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/heygrady-compass-html5-boilerplate-4cc8815/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/compass-h5bp/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/thomas-mcdonald-bootstrap-2.1.0.1/vendor/assets/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/susy-1.0.1/sass
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/sassy-math-1.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_common/modular-scale-1.0.2/stylesheets
+  /Volumes/500G/virgule/source/design/tools/compass.app/Contents/Resources/lib/ruby/compass_extensions/zurb-foundation-3.1.1/scss
+  Compass::SpriteImporter)
+2013-08-11 22:28:28 overwrite css/font-awesome.css 
+2013-08-11 22:29:24 overwrite css/font-awesome.css 
+2013-08-11 22:30:36 overwrite css/application.css 
+2013-08-11 22:32:34 overwrite css/application.css 
+2013-08-11 22:32:49 overwrite css/application.css 
+2013-08-11 22:33:03 overwrite css/application.css 
+2013-08-11 22:33:16 overwrite css/application.css 
+2013-08-11 22:35:58 overwrite css/application.css 
+2013-08-11 22:36:54 overwrite css/application.css 
+2013-08-11 22:37:03 overwrite css/application.css 
+2013-08-11 22:38:58 overwrite css/application.css 
+2013-08-11 22:40:50 overwrite css/application.css 
+2013-08-11 22:41:10 overwrite css/application.css 
+2013-08-11 22:42:28 overwrite css/application.css 
+2013-08-11 22:43:32 overwrite css/application.css 
+2013-08-11 22:47:10 overwrite css/application.css 
+2013-08-11 22:47:58 overwrite css/application.css 
+2013-08-11 22:48:09 identical css/application.css 
+2013-08-11 22:48:31 overwrite css/application.css 
+2013-08-11 22:49:19 overwrite css/application.css 
+2013-08-11 22:49:33 overwrite css/application.css 
+2013-08-11 22:50:17 overwrite css/application.css 
+2013-08-11 22:51:57 overwrite css/application.css 
+2013-08-11 22:54:50 identical css/application.css 
+2013-08-11 22:55:17 overwrite css/application.css 
+2013-08-11 22:55:56 overwrite css/application.css 
+2013-08-11 22:56:23 overwrite css/application.css 
+2013-08-11 22:57:14 overwrite css/application.css 
+2013-08-11 22:57:27 overwrite css/application.css 
+2013-08-11 22:57:52 overwrite css/application.css 
+2013-08-11 22:58:23 overwrite css/application.css 
+2013-08-11 22:58:50 overwrite css/application.css 
+2013-08-11 22:59:32 overwrite css/application.css 
+2013-08-11 23:00:08 overwrite css/application.css 
+2013-08-11 23:00:28 overwrite css/application.css 
+2013-08-11 23:00:52 overwrite css/application.css 
+2013-08-11 23:01:28 overwrite css/application.css 
+2013-08-11 23:01:42 overwrite css/application.css 
+2013-08-11 23:03:29 overwrite css/application.css 
+2013-08-11 23:03:43 overwrite css/application.css 
+2013-08-11 23:04:56 overwrite css/application.css 
+2013-08-11 23:05:15 overwrite css/application.css 
+2013-08-11 23:05:20 identical css/application.css 
+2013-08-11 23:06:08 overwrite css/application.css 
+2013-08-11 23:06:31 overwrite css/application.css 
+2013-08-11 23:06:52 overwrite css/application.css 
+2013-08-11 23:07:57 overwrite css/application.css 
+2013-08-11 23:08:16 overwrite css/application.css 
+2013-08-11 23:08:57 overwrite css/application.css 
+2013-08-11 23:09:06 overwrite css/application.css 
+2013-08-11 23:09:33 overwrite css/application.css 
+2013-08-11 23:10:13 overwrite css/application.css 
+2013-08-11 23:11:36 overwrite css/application.css 
+2013-08-11 23:11:59 overwrite css/application.css 
+2013-08-11 23:12:57 overwrite css/application.css 
+2013-08-11 23:13:17 overwrite css/application.css 
+2013-08-11 23:13:28 overwrite css/application.css 
+2013-08-11 23:13:41 overwrite css/application.css 
+2013-08-11 23:13:49 overwrite css/application.css 
+2013-08-11 23:16:31 overwrite css/application.css 
+2013-08-11 23:20:25 overwrite css/application.css 
+2013-08-11 23:21:03 overwrite css/application.css 
+2013-08-11 23:21:09 overwrite css/application.css 
+2013-08-11 23:23:28 overwrite css/application.css 
+2013-08-11 23:23:53 overwrite css/application.css 
+2013-08-11 23:24:24 overwrite css/application.css 
+2013-08-11 23:25:02 overwrite css/application.css 
+2013-08-11 23:25:20 overwrite css/application.css 
+2013-08-11 23:27:19 overwrite css/application.css 
+2013-08-11 23:27:43 overwrite css/application.css 
+2013-08-12 00:05:33 overwrite css/application.css 
+2013-08-12 00:07:21 overwrite css/application.css 
+2013-09-03 16:12:35 overwrite css/application.css 
+2013-09-03 16:16:36 overwrite css/application.css 
+2013-09-03 16:16:55 overwrite css/application.css 
+2013-09-03 16:17:23 overwrite css/application.css 
+2013-09-03 16:17:38 overwrite css/application.css 
+2013-09-03 16:17:59     error sass/application.scss (Line 72 of sass/_scaffolding.scss: Invalid CSS after "    float": expected "{", was "; right;")
+2013-09-03 16:18:00 overwrite css/application.css 
+2013-09-03 16:18:16 overwrite css/application.css 
+2013-09-03 16:18:31 identical css/application.css 
+2013-09-03 16:18:41 identical css/application.css 
+2013-09-03 16:19:23 overwrite css/application.css 
+2013-09-03 16:19:27 overwrite css/application.css 
+2013-09-03 16:20:14 identical css/application.css 
+2013-09-03 16:20:20 overwrite css/application.css 
+2013-09-03 16:21:05 identical css/application.css 
+2013-09-03 16:21:22 overwrite css/application.css 
+2013-09-03 17:12:26 overwrite css/application.css 
+2013-09-03 17:12:30 identical css/application.css 
+2013-09-03 17:13:46 overwrite css/application.css 
+2013-09-03 17:16:06 overwrite css/application.css 
+2013-09-03 17:16:59 overwrite css/application.css 
+2013-09-03 17:18:05 overwrite css/application.css 
+2013-09-03 17:18:15 overwrite css/application.css 
+2013-09-03 17:18:20 overwrite css/application.css 
+2013-09-03 17:18:50 overwrite css/application.css 
+2013-09-03 17:19:59 overwrite css/application.css 
+2013-09-03 17:20:11 overwrite css/application.css 
+2013-09-03 17:20:17 overwrite css/application.css 
+2013-09-03 18:39:34 overwrite css/application.css 
+2013-09-03 18:39:37 overwrite css/application.css 
+2013-09-03 18:39:56 overwrite css/application.css 
+2013-09-03 18:40:38 overwrite css/application.css 
+2013-09-03 18:43:17 overwrite css/application.css 
+2013-09-03 18:43:23 overwrite css/application.css 
+2013-09-03 18:43:58 overwrite css/application.css 
+2013-09-03 18:44:54 overwrite css/application.css 
+2013-09-03 18:44:55 overwrite css/application.css 
+2013-09-03 18:45:06 overwrite css/application.css 
+2013-09-03 18:45:10 overwrite css/application.css 
+2013-09-03 18:45:35 overwrite css/application.css 
+2013-09-03 18:46:03 overwrite css/application.css 
+2013-09-03 18:46:36 overwrite css/application.css 
+2013-09-03 18:46:39 identical css/application.css 
+2013-09-03 18:47:15 overwrite css/application.css 
+2013-09-03 18:47:52 overwrite css/application.css 
+2013-09-03 18:48:59 overwrite css/application.css 
+2013-09-03 18:52:43 overwrite css/application.css 
+2013-09-03 18:53:28 overwrite css/application.css 
+2013-09-03 18:53:50 overwrite css/application.css 
+2013-09-03 18:54:02 overwrite css/application.css 
+2013-09-03 18:58:13 overwrite css/application.css 
+2013-09-03 18:59:19 overwrite css/application.css 
+2013-09-03 18:59:28 overwrite css/application.css 
+2013-09-03 19:01:33 overwrite css/application.css 
+2013-09-03 19:01:35 identical css/application.css 
+2013-09-03 19:02:05 overwrite css/application.css 
+2013-09-03 19:02:39 overwrite css/application.css 
+2013-09-03 19:03:47 overwrite css/application.css 
+2013-09-03 19:03:58 identical css/application.css 
+2013-09-03 19:04:33 overwrite css/application.css 
+2013-09-03 19:07:24 overwrite css/application.css 
+2013-09-03 19:09:28 overwrite css/application.css 
+2013-09-03 19:09:34 overwrite css/application.css 
+2013-09-03 19:10:10 overwrite css/application.css 
+2013-09-03 19:11:03 overwrite css/application.css 
+2013-09-03 19:12:30 overwrite css/application.css 
+2013-09-03 19:12:42 overwrite css/application.css 
+2013-09-03 19:13:07 overwrite css/application.css 
+2013-09-03 19:13:19 overwrite css/application.css 
+2013-09-03 19:13:37 overwrite css/application.css 
+2013-09-03 19:13:48 overwrite css/application.css 
+2013-09-03 19:14:51 overwrite css/application.css 
+2013-09-03 19:15:42 overwrite css/application.css 
+2013-09-03 19:16:12 overwrite css/application.css 
+2013-09-03 19:19:11 overwrite css/application.css 
+2013-09-03 19:19:56 overwrite css/application.css 
+2013-09-03 19:20:12 overwrite css/application.css 
+2013-09-03 19:21:17 overwrite css/application.css 
+2013-09-03 19:22:21 overwrite css/application.css 
+2013-09-03 19:23:09 overwrite css/application.css 
+2013-09-03 19:24:46 overwrite css/application.css 
+2013-09-03 19:25:31 overwrite css/application.css 
+2013-09-03 21:36:59 overwrite css/application.css 
+2013-09-03 21:37:06 overwrite css/application.css 
+2013-09-03 21:38:29 overwrite css/application.css 
+2013-09-03 21:39:28 overwrite css/application.css 
+2013-09-03 21:41:38 overwrite css/application.css 
+2013-09-03 21:41:40 identical css/application.css 
+2013-09-03 22:46:53 overwrite css/application.css 
+2013-09-03 22:47:03 identical css/application.css 
+2013-09-03 22:47:05 identical css/application.css 
+2013-09-03 22:49:08 overwrite css/application.css 
+2013-09-03 22:49:13 overwrite css/application.css 
+2013-09-03 22:49:57 overwrite css/application.css 
+2013-09-03 22:51:37 overwrite css/application.css 
+2013-09-03 22:51:44 overwrite css/application.css 
+2013-09-03 22:54:12 overwrite css/application.css 
+2013-09-03 22:59:54 overwrite css/application.css 
+2013-09-03 23:01:31 overwrite css/application.css 
+2013-09-03 23:01:40 overwrite css/application.css 
+2013-09-03 23:03:40 overwrite css/application.css 
+2013-09-03 23:04:29 overwrite css/application.css 
+2013-09-03 23:04:35 overwrite css/application.css 
+2013-09-03 23:04:46 overwrite css/application.css 
+2013-09-03 23:06:21 overwrite css/application.css 
+2013-09-03 23:09:35 identical css/application.css 
+2013-09-03 23:11:36 identical css/application.css 
+2013-09-03 23:13:15 overwrite css/application.css 
+2013-09-03 23:13:48 overwrite css/application.css 
+2013-09-03 23:14:01 overwrite css/application.css 
+2013-09-03 23:15:02 overwrite css/application.css 
+2013-09-03 23:16:25 overwrite css/application.css 
+2013-09-03 23:17:57 overwrite css/application.css 
+2013-09-03 23:18:45 overwrite css/application.css 
+2013-09-03 23:19:20 overwrite css/application.css 
+2013-09-03 23:19:51 overwrite css/application.css 
+2013-09-03 23:20:14 overwrite css/application.css 
+2013-09-03 23:22:36 overwrite css/application.css 
+2013-09-03 23:22:41 identical css/application.css 
+2013-09-03 23:23:39 overwrite css/application.css 
+2013-09-03 23:24:30 overwrite css/application.css 
+2013-09-03 23:24:40 overwrite css/application.css 
+2013-09-03 23:35:04 overwrite css/application.css 
+2013-09-03 23:35:18 overwrite css/application.css 
+2013-09-03 23:38:30 overwrite css/application.css 
+2013-09-03 23:38:48 overwrite css/application.css 
+2013-09-03 23:38:58 overwrite css/application.css 
+2013-09-03 23:42:10 overwrite css/application.css 
+2013-09-03 23:43:15 overwrite css/application.css 
+2013-09-03 23:43:21 overwrite css/application.css 
+2013-09-03 23:43:35 overwrite css/application.css 
+2013-09-03 23:43:48 overwrite css/application.css 
+2013-09-03 23:44:08 overwrite css/application.css 
+2013-09-03 23:44:27 overwrite css/application.css 
+2013-09-03 23:44:52 overwrite css/application.css 
+2013-09-03 23:46:03 overwrite css/application.css 
+2013-09-03 23:46:26 overwrite css/application.css 
+2013-09-03 23:46:38 overwrite css/application.css 
+2013-09-03 23:52:05 overwrite css/application.css 
+2013-09-03 23:55:18 overwrite css/application.css 
+2013-09-03 23:55:45 overwrite css/application.css 
+2013-09-04 00:00:15 overwrite css/application.css 
+2013-09-04 00:00:33 overwrite css/application.css 
+2013-09-04 00:01:49 overwrite css/application.css 
+2013-09-04 00:05:54 overwrite css/application.css 
+2013-09-04 00:15:08 overwrite css/application.css 
+2013-09-04 00:16:18 overwrite css/application.css 
+2013-09-04 00:16:27 overwrite css/application.css 
+2013-09-04 00:17:23 overwrite css/application.css 
+2013-09-04 00:17:39 overwrite css/application.css 
+2013-09-04 00:18:51 overwrite css/application.css 
+2013-09-04 00:19:50 overwrite css/application.css 
+2013-09-04 00:20:10 overwrite css/application.css 
+2013-09-04 00:20:19 overwrite css/application.css 
+2013-09-04 00:22:06 overwrite css/application.css 
+2013-09-04 00:22:24 overwrite css/application.css 
+2013-09-04 00:22:51 overwrite css/application.css 
+2013-09-04 00:23:31 overwrite css/application.css 
+2013-09-04 00:27:23 overwrite css/application.css 
+2013-09-04 00:29:11 identical css/application.css 
+2013-09-04 00:29:24 overwrite css/application.css 
+2013-09-04 00:30:05 overwrite css/application.css 
+2013-09-04 00:33:34 overwrite css/application.css 

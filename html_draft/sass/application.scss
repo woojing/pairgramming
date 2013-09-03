@@ -23,34 +23,28 @@
 	display: block;
 	width: 100%;
 	height: 47px;
+	padding-left: 20px;
 	line-height: 47px;
 	text-align: left;
+	text-transform: uppercase;
 	background: #f7f7f7;
 	border: none;
 	border-bottom: 1px solid #ccc;
 
 	i {
-		padding-right: 10px;
+		padding-right: 6px;
 		color: #7c7c7c;
 
 	}
 }
 
-.add-new {
-	padding-left: 30px;
-}
-
-.join-talk {
-	padding-left: 25px;
-}
-
-.files {
-	padding-top: 16px;
+.refs {
+	padding-top: 10px;
 
 	li {
 		position: relative;
 		padding: 3px 18px;
-		padding-left: 32px;
+		padding-left: 22px;
 		border: 1px solid #f7f7f7;
 		border-width: 1px 0;
 
@@ -83,15 +77,16 @@
 	}
 }
 
-.chat-list {
-	padding-bottom: 8px;
+.chat-list, .chat-wrapper  {
+	padding: 10px 0 8px;
 	list-style: none;
 	border-bottom: 1px solid #f7f7f7;
 
 	li {
 		position: relative;
-		padding: 0 8px;
+		padding: 0 20px;
 		margin-bottom: 8px;
+		cursor: pointer;
 
 		&:hover {
 			.btn-delete {
@@ -141,5 +136,133 @@
 	i {
 		padding-right: 2px;
 		color: #7c7c7c;
+	}
+}
+
+.chat-wrapper {
+	font-size: 12px;
+	border-top: 2px solid #ccc;
+	border-bottom: none;
+
+	li {
+		position: relative;
+		padding: 0 20px 5px 56px;
+		border-bottom: 1px dashed #ccc;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+
+	.user {
+		font-weight: bold;
+		color: #2a6496;
+	}
+}
+
+#landing {
+	position: relative;
+	background: #f7f7f7;
+
+	.logo {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 50px auto 10px;
+		line-height: 100px;
+		text-align: center;
+		background: #252c31;
+		color: #fff;
+		@include border-radius(50%);
+
+		i {
+			font-size: 35px;
+			vertical-align: middle;
+		}
+	}
+
+	.login-wrapper {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 420px;
+		height: 420px;
+		margin: -213px 0 0 -210px;
+		background: #fff;
+		border-top: 6px solid #3b3f41;
+		@include box-shadow(0 0 10px 0px #ddd);
+	}
+
+	h1 {
+		padding: 20px 0 30px;
+		text-align: center;
+		font-size: 26px;
+		font-weight: normal;
+	}
+
+	p {
+		margin-bottom: 10px;
+		padding: 0 60px;
+	}
+
+	.facebook-before, .twitter-before {
+		i {
+			text-align: center;
+			font-size: 18px;
+			vertical-align: middle;
+			color: #fff;
+		}
+	}
+
+	.facebook-before {
+		display: block;
+		float: left;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		background-color: #0064ab;
+		color: #f4f4f4;
+		@include border-radius(3px 0 0 3px);
+	}
+
+	.facebook {
+		width: 250px;
+		height: 50px;
+		background-color: #0079ce;
+		border: none;
+		color: #f4f4f4;
+		cursor: pointer;
+		text-transform: uppercase;
+		@include border-radius(0 3px 3px 0);
+	}
+
+	.twitter-before {
+		display: block;
+		float: left;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		background-color: #189bcb;
+		color: #f4f4f4;
+		@include border-radius(3px 0 0 3px);
+	}
+
+	.twitter {
+		width: 250px;
+		height: 50px;
+		text-transform: uppercase;
+		background-color: #1bb2e9;
+		border: none;
+		color: #f4f4f4;
+		cursor: pointer;
+		@include border-radius(0 3px 3px 0);
 	}
 }

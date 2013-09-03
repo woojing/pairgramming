@@ -175,7 +175,7 @@ http://ethanschoonover.com/solarized/img/solarized-palette.png
 }
 
 .cm-s-solarized .CodeMirror-lines {
-  padding-left: 5px;
+  padding: 20px 0 0 5px;
 }
 
 .cm-s-solarized .CodeMirror-lines .CodeMirror-cursor {
