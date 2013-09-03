@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>layout</title>
+<link rel="stylesheet" href="{{ STATIC_URL }}css/application.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    var g_static_root = "{{ STATIC_URL }}";
+</script>
+</head>
+<body id="landing">
+    <div class="login-wrapper">
+        <span class="logo"><i class="icon-group"></i></span>
+        <h1>Login to Pairgramming</h1>
+        <p class="button-wrapper">
+            <a class="facebook-before"><i class="icon-facebook"></i></a>
+            <button class="facebook">Login Using Facbook</button>
+        </p>
+        <p class="button-wrapper">
+            <a class="twitter-before"><i class="icon-twitter"></i></a>
+            <button class="twitter">Login Using Twitter</button>
+        </p>
+    </div>
+</body>
+</html>
