@@ -71,7 +71,8 @@ if __name__ == "__main__":
 
     # 2. Create Tornado application
     app = tornado.web.Application(
-            [(r"/", IndexHandler)] + ChatRouter.urls
+            [(r"/", IndexHandler)] + ChatRouter.urls,
+            debug=True
     )
 
     # 3. Make Tornado app listen on port 8080

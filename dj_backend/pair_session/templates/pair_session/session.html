@@ -1,4 +1,4 @@
-<!doctype html>
+{% load socialaccount %}<!doctype html>
 <html lang="ko"> 
 <head>
 <meta charset="utf-8">
@@ -31,6 +31,11 @@
                 <h1>my_dict.py</h1>
             </div>
             <div class="col-r">
+                <!-- <div class="fb-login-button" data-width="50"></div> -->
+                <button class="btn">
+                    <i class="icon-user"></i>
+                    <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Login</a>
+                </button>
                 <button class="btn">
                     <i class="icon-share"></i>
                     share
@@ -73,23 +78,9 @@
 
         <div class="col-m">
             <form>
-            <textarea id="coding_area" name="coding_area">
-function findSequence(goal) {
-    function find(start, history) {
-        if (start == goal)
-            return history;
-        else if (start > goal)
-            return null;
-        else
-            return find(start + 5, "(" + history + " + 5)") ||
-            find(start * 3, "(" + history + " * 3)");
-        }
-    return find(1, "1");
-}</textarea>
+            <textarea id="coding_area" name="coding_area"></textarea>
             </form>
-
         </div>
-
         <div class="col-r">
             <button class="btn join-talk">
                 <i class="icon-plus"></i>
@@ -99,7 +90,7 @@ function findSequence(goal) {
             </ul>
         </div>
     </div>
-
+    {% providers_media_js %}
     <script src="{{ STATIC_URL }}pair_session/initial.js"></script>
 </body>
 </html>

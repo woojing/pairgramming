@@ -1,0 +1,133 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+// Body reset
+// -------------------------
+
+body {
+    margin: 0;
+    color: #444;
+    font: 14px/1.4 "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+// Links
+// -------------------------
+
+a, a:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+// Grid
+// -------------------------
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    *zoom: 1;
+}
+
+.row:before, .row:after {
+    content: '';
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+// Layout
+// -------------------------
+
+.wrapper, .content-wrapper {
+    min-width: 1024px;
+}
+
+.col-l, .col-m, .col-r {
+    float: left;
+    @include box-sizing(border-box);
+}
+
+.col-l {
+    width: 20%;
+}
+
+.col-m {
+    width: 60%;
+}
+
+.col-r {
+    width: 20%;
+}
+
+.header {
+    height: 60px;
+    background-color: #181818;
+
+    h1 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .col-l {
+        padding-left: 18px;
+    }
+
+    .col-r {
+        text-align: right;
+        padding-right: 18px;
+    }
+
+    .btn {
+        display: inline-block;
+        height: 60px;
+        padding: 0 10px;
+        font-size: 12px;
+        background: none;
+        border: none;
+        color: #d1d1d1;
+
+        i {
+            display: block;
+            font-size: 20px;
+        }
+    }
+}
+
+.content-wrapper {
+    .col-l, .col-m, .col-r {
+        position: absolute;
+        top: 60px;
+        bottom: 0;
+        height: 100%;
+        background: #f7f7f7;
+    }
+
+    .col-l {
+        left : 0;
+        right: 20%;
+    }
+
+    .col-r {
+        right: 0;
+        left: 85%;
+    }
+
+    .col-m {
+        right: 15%;
+        left: 20%;
+        overflow: hidden;
+        background: #252c31;
+    }
+}
+
