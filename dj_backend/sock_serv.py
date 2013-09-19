@@ -1,14 +1,21 @@
 # -*- coding: utf-8 -*-
-"""
-    Simple sockjs-tornado chat application. By default will listen on port 8080.
-"""
+import sys
+import os
 import json
 import random
 import tornado.ioloop
 import tornado.web
+from tornado import gen
+from tornado.httpclient import AsyncHTTPClient, HTTPClient
 
 import sockjs.tornado
 
+sys.path.append( os.path.join(os.path.dirname(__file__), '..') )
+os.environ['DJANGO_SETTINGS_MODULE'] = 'dj_backend.settings'
+from importlib import import_module
+from django.conf import settings
+SessionStore = import_module(settings.SESSION_ENGINE).SessionStore
+# import ipdb; ipdb.set_trace()
 
 class IndexHandler(tornado.web.RequestHandler):
     """Regular HTTP handler to serve the chatroom page"""
@@ -21,6 +28,8 @@ class ChatConnection(sockjs.tornado.SockJSConnection):
     # Class level variable
     # participants = set()
     session_blocks = dict()
+    http_client = AsyncHTTPClient()
+    # http_client = HTTPClient()
 
     def on_open(self, info):
         # Send that someone joined
@@ -29,14 +38,20 @@ class ChatConnection(sockjs.tornado.SockJSConnection):
         # self.participants.add(self)
         self.joined_session = []
 
+    @gen.coroutine
     def on_message(self, message):
-        # import ipdb; ipdb.set_trace()
         recv_data = json.loads(message)
+        session_id = self.session.conn_info.cookies['sessionid'].value
+        dj_session = SessionStore(session_key=session_id)
+        dj_user_id = dj_session.get('_auth_user_id')
+        user_response = yield self.http_client.fetch('http://localhost:8000/api/users/%d/?format=json' % dj_user_id)
+        dj_user = json.loads(user_response.body)
+
         if recv_data['type']=='session_join':
             session_name = recv_data['data']
             if self.session_blocks.get(session_name, False) == False:
                 self.session_blocks[session_name] = set()
-            self.user_name = random.choice(['john','johnny','shane','jane','harry','kim','simpson','tompson','wilson'])
+            self.user_name = dj_user['username']
             self.session_blocks[session_name].add(self)
             self.joined_session.append(session_name)
             self.session_list_update(session_name)

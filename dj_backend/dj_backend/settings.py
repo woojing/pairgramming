@@ -153,6 +153,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+
     # allauth
     'allauth',
     'allauth.account',
@@ -173,12 +174,17 @@ INSTALLED_APPS = (
     # 'allauth.socialaccount.providers.vimeo',
     # 'allauth.socialaccount.providers.vk',
     # 'allauth.socialaccount.providers.weibo',
+
     # apps
     'pair_session',
+    'api',
+
     # packages
     'django_extensions',
     'south',
     'pipeline',
+    'template_debug',
+    'rest_framework',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -238,7 +244,12 @@ SOCIALACCOUNT_PROVIDERS = {
 
 LOGIN_REDIRECT_URL = '/pair_session/'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+    'PAGINATE_BY': 10
+}
+
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError:
     pass

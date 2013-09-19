@@ -17,4 +17,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^pair_session/', include('pair_session.urls')),
+    url(r'^api/', include('api.urls')),
 )

@@ -1,4 +1,4 @@
-{% load socialaccount %}<!doctype html>
+{% load socialaccount debug_tags %}<!doctype html>
 <html lang="ko"> 
 <head>
 <meta charset="utf-8">
@@ -34,15 +34,15 @@
                 <!-- <div class="fb-login-button" data-width="50"></div> -->
                 <button class="btn">
                     <i class="icon-user"></i>
+                    {% if user.is_authenticated %}
+                    {{ user.username }}
+                    {% else %}
                     <a href="{% provider_login_url "facebook" method="js_sdk" %}">Facebook Login</a>
+                    {% endif %}
                 </button>
                 <button class="btn">
                     <i class="icon-share"></i>
                     share
-                </button>
-                <button class="btn">
-                    <i class="icon-fullscreen"></i>
-                    fullscreen
                 </button>
             </div>
         </header>
