@@ -1,14 +1,16 @@
-;$(function() {
+$(function() {
 
-  var editor = CodeMirror.fromTextArea(document.getElementById("coding_area"), {
+  var editor_default = {
     lineNumbers: true,
-    mode: "javascript",
+    mode: {name: "javascript", json: true},
     indentUnit: 2,
     indentWithTabs: false,
     enterMode: "keep",
     tabMode: "shift",
     theme: 'solarized dark'
-  });
+  };
+  var editor = CodeMirror.fromTextArea(document.getElementById("coding_area"),
+    editor_default);
 
   window.code_editor = editor;
 
@@ -18,11 +20,11 @@
 
   var last_update_time = new Date();
 
-  var template_user_list = "<li>\
-                    <img src=\"{{ static_root }}images/dummy-avatar1.png\" alt=\"\">\
-                    <span class=\"color color-1\"></span>{{ user_name }}\
-                    <button class=\"btn-delete\"><i class=\"icon-remove\"></i></button>\
-                </li>"
+  var template_user_list = "<li>"+
+        "<img src=\"{{ user.avatar_url }}\" width='28' height='28'>"+
+        "<span class=\"color color-1\"></span>{{ user.username }}"+
+        "<button class=\"btn-delete\"><i class=\"icon-remove\"></i></button>"+
+        "</li>";
 
   function log(msg) {
     console.log(msg);
@@ -77,6 +79,7 @@
             user_list_html += Mustache.render(template_user_list, user);
           });
           $('ul.chat-list').html(user_list_html);
+          break;
         default:
           break;
       }
@@ -117,7 +120,7 @@
   $('button.join-talk').click(function() {
     if (conn === null) {
       connect();
-      $('button.join-talk span.join-button-text').text('Disconnect')
+      $('button.join-talk span.join-button-text').text('Disconnect');
     } else {
       disconnect();
       $('button.join-talk span.join-button-text').text('JOIN TALK');
