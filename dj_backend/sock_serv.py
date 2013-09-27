@@ -2,6 +2,8 @@
 """
     Simple sockjs-tornado chat application. By default will listen on port 8080.
 """
+import sys
+import os
 import json
 import tornado.ioloop
 import tornado.web
