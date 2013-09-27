@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import TemplateView
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -18,4 +19,5 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('allauth.urls')),
     url(r'^pair_session/', include('pair_session.urls')),
     url(r'^api/', include('api.urls')),
+    url(r'^login/', TemplateView.as_view(template_name="login.html")),
 )

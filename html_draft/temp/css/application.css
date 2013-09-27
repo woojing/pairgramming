@@ -2540,8 +2540,6 @@ a [class*=" icon-"] {
 /* line 41, ../sass/application.scss */
 .refs {
   padding-top: 10px;
-  width:100%;
-  overflow-y: scroll;
 }
 /* line 44, ../sass/application.scss */
 .refs li {
@@ -2647,8 +2645,6 @@ a [class*=" icon-"] {
   font-size: 12px;
   border-top: 2px solid #ccc;
   border-bottom: none;
-  height: 80%;
-  overflow-y: scroll;
 }
 /* line 147, ../sass/application.scss */
 .chat-wrapper li {

@@ -1,26 +1,54 @@
-<!doctype html>
+{% load socialaccount %}<!doctype html>
 <html lang="ko"> 
 <head>
 <meta charset="utf-8">
-<title>layout</title>
+<title>Let's pair programming :)</title>
 <link rel="stylesheet" href="{{ STATIC_URL }}css/application.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-    var g_static_root = "{{ STATIC_URL }}";
-</script>
 </head>
 <body id="landing">
     <div class="login-wrapper">
         <span class="logo"><i class="icon-group"></i></span>
+        {% if not request.session.insta_name %}
         <h1>Login to Pairgramming</h1>
+        <form method="post" action="">
         <p class="button-wrapper">
-            <a class="facebook-before"><i class="icon-facebook"></i></a>
+            <input type="text" name="username" class="text" placeholder="Your Name">
+            {% csrf_token %}
+            <input type="submit" class="name-submit" value="Instant Login">
+        </p>
+        </form>
+        <p class="line"><span>or</span></p>
+        <p class="button-wrapper">
+            <a class="facebook-before" href="{% provider_login_url 'facebook' method='js_sdk' %}"><i class="icon-facebook"></i></a>
             <button class="facebook">Login Using Facbook</button>
         </p>
-        <p class="button-wrapper">
-            <a class="twitter-before"><i class="icon-twitter"></i></a>
-            <button class="twitter">Login Using Twitter</button>
-        </p>
+        {% else %}
+
+        <!-- 로그인 시에는 다음 문구로 대체됩니다!!! -->
+        
+        <p class="greeting">Hello <span>{{ request.session.insta_name }}</span>! ^^</p>
+
+        {% endif %}
+
+        {% if not request.GET.id %}
+        <h1 class="title-chatroom">Create your chat room now!</h1>
+        <form method="post" action="/pair_session/">
+            <p class="button-wrapper">
+                <label>
+                <input type="radio" name="language" value="javascript" checked/> JavaScript</label>
+                <label>
+                <input type="radio" name="language" value="python" /> Python</label>
+                <label>
+                <input type="radio" name="language" value="ruby" /> Ruby</label>
+
+                <input type="text" class="text" name="room_name" placeholder="Chat Room Name">
+                <input type="submit" class="name-submit" value="Create">
+            </p>
+            {% csrf_token %}
+        </form>
+        {% endif %}
     </div>
+    {% providers_media_js %}
 </body>
 </html>
