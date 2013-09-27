@@ -21,6 +21,11 @@ SessionStore = import_module(settings.SESSION_ENGINE).SessionStore
 
 DJ_BACKEND = 'http://localhost:8000'
 
+try:
+    from .local_sock_settings import *
+except ImportError:
+    pass
+
 class IndexHandler(tornado.web.RequestHandler):
     """Regular HTTP handler to serve the chatroom page"""
     def get(self):
