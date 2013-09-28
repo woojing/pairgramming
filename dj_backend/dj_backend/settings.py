@@ -216,7 +216,7 @@ LOGGING = {
     }
 }
 
-STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
+# STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
 PIPELINE_COMPILERS = (
   'pipeline.compilers.sass.SASSCompiler',
